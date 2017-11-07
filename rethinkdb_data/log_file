@@ -1,0 +1,18 @@
+2017-11-06T11:54:20.969351000 0.015298s notice: Recursively removing directory /Users/isaiahgrey/Documents/DevtreeAcademy/group-1/week-9/auth-api-example/rethinkdb_data/tmp
+2017-11-06T11:54:20.970525000 0.016476s notice: Initializing directory /Users/isaiahgrey/Documents/DevtreeAcademy/group-1/week-9/auth-api-example/rethinkdb_data
+2017-11-06T11:54:20.970633000 0.016580s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/isaiahgrey/Documents/DevtreeAcademy/group-1/week-9/auth-api-example/rethinkdb_data' did not already exist or is empty.)
+2017-11-06T11:54:20.970689000 0.016636s notice: Running rethinkdb 2.3.6 (CLANG 9.0.0 (clang-900.0.37))...
+2017-11-06T11:54:20.976952000 0.022900s notice: Running on Darwin 17.0.0 x86_64
+2017-11-06T11:54:20.977073000 0.023020s notice: Loading data from directory /Users/isaiahgrey/Documents/DevtreeAcademy/group-1/week-9/auth-api-example/rethinkdb_data
+2017-11-06T11:54:21.098664000 0.144606s info: Automatically using cache size of 2483 MB
+2017-11-06T11:54:21.099094000 0.145036s notice: Listening for intracluster connections on port 29015
+2017-11-06T11:54:21.100212000 0.146154s notice: Listening for client driver connections on port 28015
+2017-11-06T11:54:21.100311000 0.146252s notice: Listening for administrative HTTP connections on port 8080
+2017-11-06T11:54:21.100313000 0.146254s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-11-06T11:54:21.100319000 0.146260s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-11-06T11:54:21.100320000 0.146261s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-11-06T11:54:21.100323000 0.146264s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-11-06T11:54:21.100326000 0.146267s notice: Server ready, "isaiahs_mbp_lan_n39" fbdbe9cb-905c-4b66-abb3-c7c4ea901924
+2017-11-06T11:54:30.031353000 9.076946s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: Starting a new Raft election for term 1.
+2017-11-06T11:54:30.031686000 9.077280s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: Added replica on this server.
+2017-11-06T11:54:30.052140000 9.097733s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: This server is Raft leader for term 1. Latest log index is 0.
