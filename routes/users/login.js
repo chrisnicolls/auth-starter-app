@@ -16,11 +16,43 @@ module.exports = {
   method: "POST",
   path: "/api/users/login",
   config: {
-    // auth: {
-    //   mode: "optional"
-    // },
+    auth: {
+      mode: "optional"
+    },
     handler: function(request, reply) {
-      reply("not implemented");
+      // grab the email and password values
+      // from the request.payload object
+      // (this is the body sent in the request)
+      let { email, password } = request.payload;
+
+      this.models.User
+        .filter({ email: email }) // filter users by the login email
+        .then(users => {
+          // if there are zero users with that email
+          // throw an error to the catch block
+          if (users.length === 0) {
+            throw "Email and password combination is invalid";
+          }
+          // grab the user in the first index of the users array
+          let [user] = users;
+
+          // run the compare password function on the user document found
+          // with the login email, and compare the login password
+          // to the stored secure hash password value
+          return user.comparePassword(password);
+        })
+        .then(user => {
+          // if the value of user is "false", throw an error to the catch block
+          if (!user) {
+            throw "Email and password combination is invalid";
+          }
+          // remove password before generated JWT
+          delete user.password;
+
+          return user.generateJWT();
+        })
+        .then(token => reply(token))
+        .catch(err => reply(err));
     }
   }
 };
